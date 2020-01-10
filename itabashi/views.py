@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 def start(request):
     """トップ画面"""
-    return render(request,'template\typies/start.html')
+    return render(request,'/start.html')

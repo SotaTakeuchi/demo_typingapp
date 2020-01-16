@@ -9,7 +9,7 @@ class InquiryView(generic.FormView): #ここではデータベースを使用す
     template_name="inquiry.html"
     form_class=InquiryForm
 
-'''import random
+import random
 import time
 CTRL_C = 3
 space = 32
@@ -75,4 +75,4 @@ if start_key == space:
     print('Typemiss=',type_miss_list)
 
 else:
-    None'''
+    None

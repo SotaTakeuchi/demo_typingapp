@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}己の限界に挑戦！|Typing app{% endblock %}
+
+{% block header %}
+
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container">
+        <h1 class="masthead-heading mb-0">TYPING_APP</h1>
+        <h2 class="masthead-subheading mb-0">TYPINGにチャレンジ</h2>
+        <a  data-toggle="modal" data-target="#testModal" class="btn btn-primary btn-xl rounded-pill mt-5">PLAY NOW</a>
+
+        </div>
+    </div>
+
+
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+
+</header>
+
+<!-- ボタン・リンククリック後に表示される画面の内容 -->
+ <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" data-keyboard="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="basicModal">TYPING!!</h4>
+            </div>
+            <div class="modal-body">
+
+                
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                <button type="button" class="btn btn-danger">削除</button>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+{% endblock %}
+
+{% block contents %}
+<section>
+    <div class="container">
+        <div class="row align-item-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <img class="img-fluid rounded-circle" src="{% static 'img/01.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Typing play</h2>
+                    <p>TYPINGにチャレンジしよう！</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <img class="img-fluid rounded-circle" src="{% static 'img/02.jpg' %}" alt="">
+                </div>
+            </div>
+             <div class="col-lg-6">
+                <div class="p-5">
+                     <h2 class="display-4">Save your time</h2>
+                     <p>あなただけのタイムを保存</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5">
+                    <img class="img-fluid rounded-circle" src="{% static 'img/03.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Membership System</h2>
+                    <p>会員制のtyping app</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+ 

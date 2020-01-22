@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'typing_app.apps.TypingAppConfig',
+    'accounts.apps.AccountsConfig',
 
 
 
@@ -129,3 +130,5 @@ STATICFILES_DIRS=(
     os.path.join(BASE_DIR, 'static'),
 
 )
+
+AUTH_USER_MODEL= 'accounts.CustomUser'

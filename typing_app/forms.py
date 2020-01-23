@@ -18,4 +18,3 @@ class InquiryForm(forms.Form):
         self.fields['message'].widget.attrs['class']='form-control col-12'
         self.fields['message'].widget.attrs['placeholder']='メッセージをここに入力してください'
 
-

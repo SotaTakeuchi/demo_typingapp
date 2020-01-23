@@ -1,5 +1,7 @@
 from django.views import generic
 from .forms import InquiryForm
+from django.shortcuts import render
+
 
 # Create your views here.
 class IndexViews(generic.TemplateView):
@@ -8,4 +10,11 @@ class IndexViews(generic.TemplateView):
 class InquiryView(generic.FormView): #ここではデータベースを使用する機会がないのでFormViewクラスを継承
     template_name="inquiry.html"
     form_class=InquiryForm
+
+
+
+
+
+
+
 

@@ -9,6 +9,7 @@ class InquiryView(generic.FormView): #ここではデータベースを使用す
     template_name="inquiry.html"
     form_class=InquiryForm
 
+<<<<<<< HEAD
 import random
 import time
 CTRL_C = 3
@@ -76,3 +77,5 @@ if start_key == space:
 
 else:
     None
+=======
+>>>>>>> SotaTakeuchi

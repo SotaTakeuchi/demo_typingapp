@@ -13,6 +13,7 @@
         <h1 class="masthead-heading mb-0">TYPING_APP</h1>
         <h2 class="masthead-subheading mb-0">TYPINGにチャレンジ</h2>
         <a  data-toggle="modal" data-target="#testModal" class="btn btn-primary btn-xl rounded-pill mt-5">PLAY NOW</a>
+        <a href="{% url 'account_login' %}" class="btn btn-primary btn-xl rounded-pill mt-5">LOG IN</a>
 
         </div>
     </div>
@@ -33,9 +34,23 @@
                 <h4 class="modal-title" id="basicModal">TYPING!!</h4>
             </div>
             <div class="modal-body">
+<<<<<<< HEAD
 
                 
+=======
+                <head>
+                    <meta charset="UTF-8" />
+                    <title>typingGame</title>
+                    <link rel="stylesheet" type="text/css" media="screen,print" href="{% static 'css/typing.css' %}" />
+                </head>
+>>>>>>> SotaTakeuchi
                 
+                
+                <body>
+                    <div id="frame"></div>
+                    <input type="button" class="button" id="restart" value="restart" onclick="gameSet()">
+                    <script type="text/javascript" src="{% static 'js/typing.js' %}"></script>
+                </body>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>

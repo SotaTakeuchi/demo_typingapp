@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'typing_app.apps.TypingAppConfig',
-    
+    'accounts.apps.AccountsConfig',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
 
 
 
@@ -130,3 +134,25 @@ STATICFILES_DIRS=(
     os.path.join(BASE_DIR, 'static'),
 
 )
+
+AUTH_USER_MODEL= 'accounts.CustomUser'
+
+SITE_ID= 1
+
+AUTHENTICATION_BACKENDS = (
+    'allauth.account.auth_backends.AuthenticationBackend',
+    #一般ユーザー用メアド
+    'django.contrib.auth.backends.ModelBackend',
+    #管理サイト用メアド
+)
+
+ACCOUNT_AUTHENTICATION_METHOD= 'email'
+ACCOUNT_USERNAME_REQUIRED = False
+
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_REQUIRED = 'True'
+
+LOGIN_REDIRECT_URL = 'typing_app:index'
+ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
+
+ACCOUNT_LOGOUT_ON_GET = True

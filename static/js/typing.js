@@ -37,19 +37,19 @@ var endFlag = false; //時間切れになったかどうか
 var typStart, typEnd; //開始時と終了時の時刻を格納
 
 dat = [{
-        "c_word": "dog"
+        "c_word": "ToyoUniversity"
     },
     {
-        "c_word": "cat"
+        "c_word": "INIAD"
     },
     {
-        "c_word": "pet"
+        "c_word": "SakamuraKen"
     },
     {
-        "c_word": "bed"
+        "c_word": "Akabane"
     },
     {
-        "c_word": "bad"
+        "c_word": "ComputerScience"
     },
 ];
 

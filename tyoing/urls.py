@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    #path('admin/', admin.site.urls), #このルーティング設定はDjangoの管理サイト用
+    path('admin/', admin.site.urls), #このルーティング設定はDjangoの管理サイト用
     path('',include('typing_app.urls')),
     path('accounts/',include('allauth.urls')),
 

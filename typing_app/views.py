@@ -11,8 +11,8 @@ class InquiryView(generic.FormView): #ここではデータベースを使用す
     template_name="inquiry.html"
     form_class=InquiryForm
 
-def Typing(request):
-    return render(request, 'typing_app/Typing.html')
+
+
 
 
 

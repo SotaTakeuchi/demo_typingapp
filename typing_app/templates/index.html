@@ -7,6 +7,7 @@
 
 {% block header %}
 
+
 <header class="masthead text-center text-white">
     <div class="masthead-content">
         <div class="container">
@@ -24,6 +25,7 @@
     <div class="bg-circle-3 bg-circle"></div>
     <div class="bg-circle-4 bg-circle"></div>
 
+   
 </header>
 
 <!-- ボタン・リンククリック後に表示される画面の内容 -->
@@ -33,17 +35,35 @@
             <div class="modal-header">
                 <h4 class="modal-title" id="basicModal">TYPING!!</h4>
             </div>
-            <div class="modal-body">                
+            <div class="modal-body">
+                <body onload="gameSet()" class="itabashi">
+                    <div id="main_typing" class="itabashi">
+                        <!-- 時間の表示 -->
+                        <p id="time" class="itabashi">最初の一文字入力でスタート</p>
                 
-                <body>
-                    <div id="frame"></div>
-                    <input type="button" class="button" id="restart" value="restart" onclick="gameSet()">
+                        <div class="question itabashi" >
+                            <!-- 出題 -->
+                            <font id="mondai" class="itabashi"></font>
+                        </div>
+                        <!-- タイピング済みの部分の表示 -->
+                        <p id="input" class="itabashi"></p>
+                        <!-- ミスタイプ数の表示 -->
+                        <p id="missType" class="itabashi"></p>
+                
+                        <button id="retry" type="button" onclick="location.reload()" class="itabashi">
+                            リトライ
+                        </button>
+                
+                    </div>
+                
+                  
+                
+                
                     <script type="text/javascript" src="{% static 'js/typing.js' %}"></script>
                 </body>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-                <button type="button" class="btn btn-danger">削除</button>
             </div>
         </div>
     </div>
@@ -52,61 +72,7 @@
 
 {% endblock %}
 
-{% block contents %}
-<section>
-    <div class="container">
-        <div class="row align-item-center">
-            <div class="col-lg-6 order-lg-2">
-                <div class="p-5">
-                    <img class="img-fluid rounded-circle" src="{% static 'img/01.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1">
-                <div class="p-5">
-                    <h2 class="display-4">Typing play</h2>
-                    <p>TYPINGにチャレンジしよう！</p>
-                </div>
-            </div>
-        </div>
-     </div>
-</section>
 
-<section>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="p-5">
-                    <img class="img-fluid rounded-circle" src="{% static 'img/02.jpg' %}" alt="">
-                </div>
-            </div>
-             <div class="col-lg-6">
-                <div class="p-5">
-                     <h2 class="display-4">Save your time</h2>
-                     <p>あなただけのタイムを保存</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
-                <div class="p-5">
-                    <img class="img-fluid rounded-circle" src="{% static 'img/03.jpg' %}" alt="">
-                </div>
-            </div>
-            <div class="col-lg-6 order-lg-1">
-                <div class="p-5">
-                    <h2 class="display-4">Membership System</h2>
-                    <p>会員制のtyping app</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{% endblock %}
 
 
 

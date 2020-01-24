@@ -1,0 +1,33 @@
+.itabashi {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#time {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#mondai {
+  font-size: 60px;
+}
+
+#input {
+  font-size: 60px;
+}
+
+#retry {
+  display: inline-block;
+  padding: 21px 60px;
+  border-radius: 75px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#missType{
+  font-size: 40px;
+}

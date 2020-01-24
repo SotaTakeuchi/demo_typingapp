@@ -64,7 +64,7 @@ ROOT_URLCONF = 'tyoing.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -149,8 +149,8 @@ AUTHENTICATION_BACKENDS = (
 ACCOUNT_AUTHENTICATION_METHOD= 'email'
 ACCOUNT_USERNAME_REQUIRED = False
 
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_EMAIL_REQUIRED = 'True'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_EMAIL_REQUIRED = 'False'
 
 LOGIN_REDIRECT_URL = 'typing_app:index'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'

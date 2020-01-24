@@ -36,21 +36,21 @@
                 <h4 class="modal-title" id="basicModal">TYPING!!</h4>
             </div>
             <div class="modal-body">
-                <body onload="gameSet()">
-                    <div id="main_typing">
+                <body onload="gameSet()" class="itabashi">
+                    <div id="main_typing" class="itabashi">
                         <!-- 時間の表示 -->
-                        <p id="time">最初の一文字入力でスタート</p>
+                        <p id="time" class="itabashi">最初の一文字入力でスタート</p>
                 
-                        <div class="question">
+                        <div class="question itabashi" >
                             <!-- 出題 -->
-                            <font id="mondai"></font>
+                            <font id="mondai" class="itabashi"></font>
                         </div>
                         <!-- タイピング済みの部分の表示 -->
-                        <p id="input"></p>
+                        <p id="input" class="itabashi"></p>
                         <!-- ミスタイプ数の表示 -->
-                        <p id="missType"></p>
+                        <p id="missType" class="itabashi"></p>
                 
-                        <button id="retry" type="button" onclick="location.reload()" >
+                        <button id="retry" type="button" onclick="location.reload()" class="itabashi">
                             リトライ
                         </button>
                 

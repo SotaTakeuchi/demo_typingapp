@@ -17,7 +17,7 @@ var kcode = new Array(65, 66, 67, 68, 69, 70, 71, 72, 73,
 //0～25までの乱数を格納する配列
 var rnd = new Array();
 //制限時間。０を含めた秒数。２なら、３秒
-var limit = 4;
+var limit = 8;
 var sec, msec, timer;
 var miss_string, success;
 //スコア変数

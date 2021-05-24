@@ -156,3 +156,4 @@ LOGIN_REDIRECT_URL = 'typing_app:index'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
 
 ACCOUNT_LOGOUT_ON_GET = True
+ 
